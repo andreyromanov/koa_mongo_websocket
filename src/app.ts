@@ -16,6 +16,8 @@ async function main (): Promise<void> {
   const displayColors = config.get<boolean>('displayColors')
   try {
     const dbUrl = config.get<string>('dbUrl')
+    console.log(dbUrl, 'dburl');
+
     await connectDatabase(dbUrl)
     console.info(displayColors ? '\x1b[32m%s\x1b[0m' : '%s', `Connected to ${dbUrl}`)
   } catch (error) {

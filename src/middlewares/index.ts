@@ -16,7 +16,7 @@ export default function middleware () {
     serve('./src/views'), // No authorization required for static resources
     serve('./doc'),
     cors(),
-    auth(),
+    //auth(),
     bodyParser(),
     delay({ ms: 50 })
   ])

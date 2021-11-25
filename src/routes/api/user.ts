@@ -8,6 +8,8 @@ export default (router: Router) => {
       ctx.body = await User.find({})
     })
     .post('/users', async (ctx) => {
+      console.log(ctx.req);
+
       ctx.body = await User.create({
         username: ctx.request.body.name,
         createTime: new Date()

@@ -8,7 +8,7 @@
   "scripts": {
     "nodemon": "nodemon -e ts -w src --exec 'tsc && node --inspect dist/app.js'",
     "start": "npm run nodemon",
-    "dev": "npm run nodemon"
+    "dev": "ts-node-dev src/app.ts"
   },
   "repository": {
     "type": "git",
@@ -45,6 +45,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-typescript": "^0.14.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.1.3"
   }
 }
